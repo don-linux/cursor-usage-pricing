@@ -1,1 +1,1 @@
-# New Project
+# Cursor Usage Pricing

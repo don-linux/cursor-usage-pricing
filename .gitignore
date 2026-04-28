@@ -1,7 +1,5 @@
-.env
 .venv/
-node_modules/
-*.log
-*.tmp
-.DS_Store
-CLAUDE.local.md
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
