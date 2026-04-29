@@ -61,6 +61,11 @@ Before editing:
    - Include common punctuation variants, for example `grok-4.20` and `grok-4-20`.
    - Avoid alias collisions. One alias should resolve to one model.
 
+6. Normalize warnings:
+   - Keep human-readable notes in `warnings`.
+   - Omit `warnings` when there are no notes.
+   - Do not add model-level `sourceNotes`; they duplicate `warnings`.
+
 ## Rule Mapping
 
 Translate Cursor notes into structured rules only when the docs provide enough information.
@@ -128,11 +133,11 @@ Each model should include:
     "cacheRead": 0,
     "output": 0
   },
-  "rules": [],
-  "warnings": [],
-  "sourceNotes": []
+  "rules": []
 }
 ```
+
+Add `warnings` only when there are human-readable notes worth showing to the user.
 
 ## Validation Checklist
 
@@ -143,6 +148,8 @@ Before finishing:
 - Confirm no removed official model remains in `models`.
 - Confirm all prices are numbers or `null`, never strings like `"$3"` or `"-"`.
 - Confirm every cost-changing rule has a `sourceNote`.
+- Confirm models do not use model-level `sourceNotes`.
+- Confirm empty `warnings` fields are omitted.
 - Confirm no exact alias maps to more than one model.
 - Confirm unpriced claims remain warnings instead of invented prices.
 - Summarize added, removed, changed, and unresolved models.

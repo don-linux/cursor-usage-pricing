@@ -72,11 +72,6 @@
       "warnings": [
         "Auto has fixed token rates regardless of which model Cursor selects behind the scenes.",
         "Auto is exempt from the Teams Cursor Token Rate."
-      ],
-      "sourceNotes": [
-        "Input + Cache Write: $1.25",
-        "Output: $6.00",
-        "Cache Read: $0.25"
       ]
     },
     "claude-4-sonnet": {
@@ -113,10 +108,6 @@
       "warnings": [
         "Hidden by default.",
         "Thinking variant counts as 2 requests in legacy pricing."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Thinking variant counts as 2 requests in legacy pricing"
       ]
     },
     "claude-4-sonnet-1m": {
@@ -164,12 +155,6 @@
         "Hidden by default.",
         "Thinking variant counts as 2 requests in legacy pricing.",
         "Can be very expensive due to the large context window."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Thinking variant counts as 2 requests in legacy pricing",
-        "This model can be very expensive due to the large context window",
-        "The cost is 2x when the input exceeds 200k tokens"
       ]
     },
     "claude-4.5-haiku": {
@@ -213,11 +198,6 @@
       "warnings": [
         "Hidden by default.",
         "Cache write and cache read prices are already represented in the pricing fields."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Bedrock/Vertex: regional endpoints +10% surcharge",
-        "Cache: writes 1.25x, reads 0.1x"
       ]
     },
     "claude-4.5-opus": {
@@ -248,10 +228,6 @@
       "warnings": [
         "Hidden by default.",
         "Requires Max Mode on request-based plans."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Requires Max Mode on request-based plans"
       ]
     },
     "claude-4.5-sonnet": {
@@ -298,11 +274,6 @@
       "warnings": [
         "Hidden by default.",
         "Requires Max Mode on request-based plans."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Requires Max Mode on request-based plans",
-        "The cost is 2x when the input exceeds 200k tokens"
       ]
     },
     "claude-4.6-opus": {
@@ -342,11 +313,6 @@
         "Requires Max Mode on request-based plans.",
         "Up to 1M tokens in Max Mode at the same per-token rates.",
         "No long-context surcharge."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Requires Max Mode on request-based plans",
-        "Up to 1M tokens in Max Mode at the same per-token rates (no long-context surcharge)"
       ]
     },
     "claude-4.6-opus-fast": {
@@ -380,12 +346,6 @@
         "Requires Max Mode on request-based plans.",
         "Limited research preview.",
         "Up to 1M tokens in Max Mode at the same per-token rates."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Requires Max Mode on request-based plans",
-        "Limited research preview",
-        "Up to 1M tokens in Max Mode at the same per-token rates as shorter context"
       ]
     },
     "claude-4.6-sonnet": {
@@ -432,10 +392,6 @@
       ],
       "warnings": [
         "Requires Max Mode on request-based plans."
-      ],
-      "sourceNotes": [
-        "Requires Max Mode on request-based plans",
-        "The cost is 2x when the input exceeds 200k tokens"
       ]
     },
     "claude-4.7-opus": {
@@ -473,10 +429,6 @@
         "Requires Max Mode on request-based plans.",
         "Up to 1M tokens in Max Mode at the same per-token rates.",
         "No long-context surcharge."
-      ],
-      "sourceNotes": [
-        "Requires Max Mode on request-based plans",
-        "Up to 1M tokens in Max Mode at the same per-token rates (no long-context surcharge)"
       ]
     },
     "composer-1": {
@@ -501,9 +453,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "composer-1.5": {
@@ -528,9 +477,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "composer-2": {
@@ -557,9 +503,6 @@
       "warnings": [
         "Composer 2 draws from the Auto + Composer pool.",
         "The official table does not publish a separate price for composer-2-fast."
-      ],
-      "sourceNotes": [
-        "-"
       ]
     },
     "gemini-2.5-flash": {
@@ -584,9 +527,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "gemini-3-flash": {
@@ -611,9 +551,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "gemini-3-pro": {
@@ -641,9 +578,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "gemini-3-pro-image-preview": {
@@ -672,12 +606,6 @@
         "Text input and output are priced the same as Gemini 3 Pro.",
         "Image output is priced separately.",
         "Preview models may change before becoming stable and have more restrictive rate limits."
-      ],
-      "sourceNotes": [
-        "Native image generation model optimized for speed, flexibility, and contextual understanding",
-        "Text input and output priced the same as Gemini 3 Pro",
-        "Image output: $120/1M tokens (~$0.134 per 1K/2K image, ~$0.24 per 4K image)",
-        "Preview models may change before becoming stable and have more restrictive rate limits"
       ]
     },
     "gemini-3.1-pro": {
@@ -699,11 +627,7 @@
         "cacheRead": 0.2,
         "output": 12
       },
-      "rules": [],
-      "warnings": [],
-      "sourceNotes": [
-        "-"
-      ]
+      "rules": []
     },
     "gpt-5": {
       "displayName": "GPT-5",
@@ -738,11 +662,6 @@
       "warnings": [
         "Hidden by default.",
         "Available reasoning effort variant is gpt-5-high."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities",
-        "Available reasoning effort variant is gpt-5-high"
       ]
     },
     "gpt-5-fast": {
@@ -782,11 +701,6 @@
       "warnings": [
         "Hidden by default.",
         "Faster speed but 2x price."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Faster speed but 2x price",
-        "Available reasoning effort variants are gpt-5-high-fast, gpt-5-low-fast"
       ]
     },
     "gpt-5-mini": {
@@ -811,9 +725,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "gpt-5-codex": {
@@ -838,10 +749,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities"
       ]
     },
     "gpt-5.1-codex": {
@@ -870,10 +777,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities"
       ]
     },
     "gpt-5.1-codex-max": {
@@ -898,9 +801,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     },
     "gpt-5.1-codex-mini": {
@@ -926,11 +826,6 @@
       "warnings": [
         "Hidden by default.",
         "4x rate limits compared to GPT-5.1 Codex."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities",
-        "4x rate limits compared to GPT-5.1 Codex"
       ]
     },
     "gpt-5.2": {
@@ -964,11 +859,6 @@
       "warnings": [
         "Hidden by default.",
         "Available reasoning effort variant is gpt-5.2-high."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities",
-        "Available reasoning effort variant is gpt-5.2-high"
       ]
     },
     "gpt-5.2-codex": {
@@ -993,10 +883,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Agentic and reasoning capabilities"
       ]
     },
     "gpt-5.3-codex": {
@@ -1023,11 +909,6 @@
       "warnings": [
         "Requires Max Mode on request-based plans.",
         "Available reasoning effort variant is gpt-5.3-codex-high."
-      ],
-      "sourceNotes": [
-        "Requires Max Mode on request-based plans",
-        "Agentic and reasoning capabilities",
-        "Available reasoning effort variant is gpt-5.3-codex-high"
       ]
     },
     "gpt-5.4": {
@@ -1084,14 +965,6 @@
         "Hidden by default.",
         "Requires Max Mode on request-based plans.",
         "Fast mode is 15% faster with 2x pricing."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Requires Max Mode on request-based plans",
-        "Agentic and reasoning capabilities",
-        "90% discount on cached input tokens",
-        "Fast mode is 15% faster with 2x pricing",
-        "Long context (Max Mode) supports up to 1M tokens with 2x input pricing"
       ]
     },
     "gpt-5.4-fast": {
@@ -1147,9 +1020,6 @@
       "warnings": [
         "Derived entry because Cursor documents fast mode as 2x pricing but does not list it as a separate table row.",
         "Requires Max Mode on request-based plans."
-      ],
-      "sourceNotes": [
-        "Fast mode is 15% faster with 2x pricing"
       ]
     },
     "gpt-5.4-mini": {
@@ -1181,11 +1051,6 @@
       "warnings": [
         "Hidden by default.",
         "Smaller, faster variant of GPT-5.4."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Smaller, faster variant of GPT-5.4",
-        "90% discount on cached input tokens"
       ]
     },
     "gpt-5.4-nano": {
@@ -1217,11 +1082,6 @@
       "warnings": [
         "Hidden by default.",
         "Smallest GPT-5.4 variant, optimized for cost."
-      ],
-      "sourceNotes": [
-        "Hidden by default",
-        "Smallest GPT-5.4 variant, optimized for cost",
-        "90% discount on cached input tokens"
       ]
     },
     "gpt-5.5": {
@@ -1271,14 +1131,6 @@
         "Requires Max Mode on request-based plans.",
         "Fast mode is available at higher rates, but Cursor does not publish a separate fast-mode multiplier in the table.",
         "More token-efficient than GPT-5.4 on comparable tasks."
-      ],
-      "sourceNotes": [
-        "Requires Max Mode on request-based plans",
-        "Agentic and reasoning capabilities",
-        "More token-efficient than GPT-5.4 on comparable tasks",
-        "Improved persistence on long-running tasks",
-        "Fast mode is available at higher rates",
-        "Long context (Max Mode) supports up to 1M tokens with 2x input pricing"
       ]
     },
     "grok-4.20": {
@@ -1322,10 +1174,6 @@
           "multiplier": 2,
           "sourceNote": "The cost is 2x when the input exceeds 200k tokens."
         }
-      ],
-      "warnings": [],
-      "sourceNotes": [
-        "The cost is 2x when the input exceeds 200k tokens"
       ]
     },
     "kimi-k2.5": {
@@ -1355,9 +1203,6 @@
       "rules": [],
       "warnings": [
         "Hidden by default."
-      ],
-      "sourceNotes": [
-        "Hidden by default"
       ]
     }
   },

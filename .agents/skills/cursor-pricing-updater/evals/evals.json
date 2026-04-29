@@ -3,8 +3,8 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Actualiza pricing.json con la pagina oficial de Cursor Models & Pricing. Si Cursor agrego un modelo nuevo, agregalo con precios numericos por 1M tokens, aliases normalizados, sourceNotes y reglas solo si estan documentadas.",
-      "expected_output": "pricing.json queda alineado con la tabla oficial actual, agrega modelos nuevos sin inventar reglas o precios, y valida JSON sintacticamente.",
+      "prompt": "Actualiza pricing.json con la pagina oficial de Cursor Models & Pricing. Si Cursor agrego un modelo nuevo, agregalo con precios numericos por 1M tokens, aliases normalizados, warnings cuando existan y reglas solo si estan documentadas.",
+      "expected_output": "pricing.json queda alineado con la tabla oficial actual, agrega modelos nuevos sin inventar reglas o precios, omite sourceNotes a nivel modelo, omite warnings vacios y valida JSON sintacticamente.",
       "files": [
         "pricing.json",
         "REQUIREMENTS.md"
