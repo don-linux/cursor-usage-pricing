@@ -1,0 +1,30 @@
+{
+  "skill_name": "cursor-pricing-updater",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Actualiza pricing.json con la pagina oficial de Cursor Models & Pricing. Si Cursor agrego un modelo nuevo, agregalo con precios numericos por 1M tokens, aliases normalizados, sourceNotes y reglas solo si estan documentadas.",
+      "expected_output": "pricing.json queda alineado con la tabla oficial actual, agrega modelos nuevos sin inventar reglas o precios, y valida JSON sintacticamente.",
+      "files": [
+        "pricing.json",
+        "REQUIREMENTS.md"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Revisa pricing.json contra la documentacion oficial de Cursor. Si algun modelo del JSON ya no aparece en la tabla oficial, quitalo de models. Si aparece en un CSV local pero no en la doc, muevelo a unmappedCsvModels.",
+      "expected_output": "Los modelos oficiales obsoletos se eliminan, los modelos CSV-only se conservan como unmappedCsvModels, y el reporte final lista lo removido y lo incierto.",
+      "files": [
+        "pricing.json"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Normaliza los aliases de pricing.json para que gpt-5.5-extra-high, gpt-5.5-high y gpt-5.5-low usen el precio base de GPT-5.5. No crees una variante nueva salvo que Cursor publique precio separado, como fast, mini, nano, codex o 1M.",
+      "expected_output": "Los sufijos de esfuerzo quedan como aliases o matchers del modelo base, las variantes explicitamente preciadas siguen separadas, y no se inventan precios para variantes no publicadas.",
+      "files": [
+        "pricing.json"
+      ]
+    }
+  ]
+}
