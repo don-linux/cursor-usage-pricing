@@ -50,42 +50,6 @@
 - Guardar reglas especiales por modelo.
 - Guardar notas originales de la documentacion.
 
-```json
-{
-  "sourceUrl": "https://cursor.com/docs/models-and-pricing.md",
-  "lastUpdated": "2026-04-29",
-  "currency": "USD",
-  "unit": "per_1m_tokens",
-  "models": {
-    "gpt-5.5": {
-      "displayName": "GPT-5.5",
-      "provider": "OpenAI",
-      "aliases": ["gpt-5.5", "gpt-5.5-extra-high"],
-      "pricing": {
-        "input": 5,
-        "cacheWrite": null,
-        "cacheRead": 0.5,
-        "output": 30
-      },
-      "rules": [
-        {
-          "type": "input_multiplier",
-          "when": {
-            "maxMode": true,
-            "inputTokensGreaterThan": 200000
-          },
-          "multiplier": 2
-        }
-      ],
-      "notes": [
-        "Requires Max Mode on request-based plans",
-        "Long context supports up to 1M tokens with 2x input pricing"
-      ]
-    }
-  }
-}
-```
-
 ## Calculo
 
 - Input sin cache * precio input.
@@ -112,13 +76,13 @@ total = costo_input + costo_cache_write + costo_cache_read + costo_output
 - Algunas reglas modifican solo un tipo de token.
 - Ejemplo: multiplicar input cuando supera cierto umbral.
 - Ejemplo: aplicar surcharge por Max Mode.
-- Ejemplo: aplicar Cursor Token Rate en planes Teams.
+- Ejemplo: aplicar Cursor Token Rate en planes Teams (Aunque personalmente no puedo probarlo con mi cuenta de Cursor, no tengo planes Teams ni enterprise, se ajusta mas al csv que comparti con mi cuenta personal)
 - Las reglas deben mostrarse al usuario como advertencias.
 - Si una regla no esta implementada, marcar el calculo como estimado parcial.
 
 ## Consideraciones
 
-- El CSV puede mostrar `Included`, pero la calculadora debe mostrar costo estimado.
+- El CSV puede mostrar `Included`, pero la calculadora debe mostrar costo estimado, es el objetivo de la app, visualizar cuanto es el costo real de los tokens consumidos
 - El costo estimado no siempre equivale al cobro real.
 - Algunos modelos pueden tener reglas especiales.
 - Algunos nombres del CSV pueden no coincidir exactamente con la documentacion.
@@ -126,8 +90,6 @@ total = costo_input + costo_cache_write + costo_cache_read + costo_output
 
 ## Futuro
 
-- Backend opcional con FastAPI.
-- Job para actualizar precios desde la documentacion oficial.
 - Historial de consumos.
 - Comparacion mensual.
 - Exportar resultados.
