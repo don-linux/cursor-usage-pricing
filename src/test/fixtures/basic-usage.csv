@@ -1,0 +1,3 @@
+Date,Kind,Model,Max Mode,Input (w/ Cache Write),Input (w/o Cache Write),Cache Read,Output Tokens,Total Tokens,Cost
+2026-04-01,agent,composer-2,false,0,100000,50000,20000,170000,Included
+2026-04-02,agent,unknown-model,false,0,1000,0,100,1100,$0.00

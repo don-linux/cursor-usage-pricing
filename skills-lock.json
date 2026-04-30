@@ -6,6 +6,18 @@
       "sourceType": "github",
       "skillPath": "SKILL.md",
       "computedHash": "37894f78ea482d14a20912b00fa14d44200252a02a23264a67a2891739995a9c"
+    },
+    "uncodixfy": {
+      "source": "cyxzdev/Uncodixfy",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "deac2e88f3fc4a66aa95c77b509b5d22c189dfdb87caa24d3db85516f4600776"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "ca7b0c0c6e5f2750043f7f0cd72d16ac4e2abc48f9b5500d047a4b77a2506212"
     }
   }
 }
