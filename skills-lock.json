@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "cursor-brand": {
+      "source": "cursorcommunityled/cursor-brand",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "37894f78ea482d14a20912b00fa14d44200252a02a23264a67a2891739995a9c"
+    }
+  }
+}
