@@ -34,7 +34,7 @@
 
 ## Precios
 
-- Fuente oficial: https://cursor.com/docs/models-and-pricing.md
+- Fuente oficial: [https://cursor.com/docs/models-and-pricing.md](https://cursor.com/docs/models-and-pricing.md)
 - Precios por millon de tokens.
 - Mantener un archivo local de precios versionado.
 - Actualizacion manual al inicio.
@@ -132,3 +132,4 @@ total = costo_input + costo_cache_write + costo_cache_read + costo_output
 - Comparacion mensual.
 - Exportar resultados.
 - Graficas por modelo, fecha y tipo de token.
+
